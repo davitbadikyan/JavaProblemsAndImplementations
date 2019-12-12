@@ -60,6 +60,18 @@ public class Main {
         System.out.println();
     }
 
+    //Sixth Problem
+    public static void arrayElementsCanBeDividedByFive() {
+        int x = 5;
+        int[] arr = {19, 65, -47, 34, 10, 35, 3};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % x == 0) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
@@ -67,5 +79,6 @@ public class Main {
         printArrayElementsToThousand();
         printEvenElements();
         printOddElementsOfArray();
+        arrayElementsCanBeDividedByFive();
     }
 }
