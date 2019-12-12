@@ -136,6 +136,16 @@ public class Main {
         System.out.println(result);
     }
 
+    //Eleventh Problem
+    public static void checkingValueYesOrNo() {
+        String str = "Something Someone Somebody";
+        if (str.indexOf("b") != -1) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
@@ -148,5 +158,6 @@ public class Main {
         printElementsGreaterOrSmallerThan();
         sortArrayAscendingAndDescendingOrder();
         printALetters();
+        checkingValueYesOrNo();
     }
 }
