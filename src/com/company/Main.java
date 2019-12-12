@@ -48,11 +48,24 @@ public class Main {
         System.out.println();
     }
 
+    // Fifth Problem
+    public static void printOddElementsOfArray() {
+        short[] arr= new short[151];
+        int index = 0;
+        for (short i = 1; i < 300; i += 2) {
+            arr[index] = i;
+            System.out.print(arr[index] + " ");
+            index++;
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
         printArrayOfZeroValues();
         printArrayElementsToThousand();
         printEvenElements();
+        printOddElementsOfArray();
     }
 }
