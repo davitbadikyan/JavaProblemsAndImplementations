@@ -34,10 +34,25 @@ public class Main {
         System.out.println();
     }
 
+    //Forth Problem
+    public static void printEvenElements() {
+        byte[] arr = new byte[31];
+        int index = 0;
+        for (byte i = -30; i <= 30; i += 2) {
+            if (i != 0) {
+                arr[index] = i;
+                System.out.print(arr[index] + " ");
+                index++;
+            }
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
         printArrayOfZeroValues();
         printArrayElementsToThousand();
+        printEvenElements();
     }
 }
