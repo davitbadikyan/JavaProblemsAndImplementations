@@ -84,6 +84,19 @@ public class Main {
         System.out.println();
     }
 
+    //Eighth Problem
+    public static void printElementsGreaterOrSmallerThan() {
+        float[] arr = {3.4F, 14.8F, -61.7F, 2.1F, -39.4F, 356.8F};
+        float a = 35.56F;
+        float b = -34.655F;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > a || arr[i] < b) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
@@ -93,5 +106,6 @@ public class Main {
         printOddElementsOfArray();
         arrayElementsCanBeDividedByFive();
         doubleElementsGreaterThan();
+        printElementsGreaterOrSmallerThan();
     }
 }
