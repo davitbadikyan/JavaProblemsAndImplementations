@@ -97,6 +97,33 @@ public class Main {
         System.out.println();
     }
 
+    //Ninth Problem
+    public static void sortArrayAscendingAndDescendingOrder() {
+        double[] arr = {16.35, 58.1, 37.6, 24.6, -14.8, 21.1};
+        for (int i = arr.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] < arr[j + 1]) {
+                    double result1 = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = result1;
+                }
+            }
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+        for (int i = arr.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    double result2 = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = result2;
+                }
+            }
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
@@ -107,5 +134,6 @@ public class Main {
         arrayElementsCanBeDividedByFive();
         doubleElementsGreaterThan();
         printElementsGreaterOrSmallerThan();
+        sortArrayAscendingAndDescendingOrder();
     }
 }
