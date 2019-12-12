@@ -50,7 +50,7 @@ public class Main {
 
     // Fifth Problem
     public static void printOddElementsOfArray() {
-        short[] arr= new short[151];
+        short[] arr = new short[151];
         int index = 0;
         for (short i = 1; i < 300; i += 2) {
             arr[index] = i;
@@ -146,6 +146,18 @@ public class Main {
         }
     }
 
+    // Problem twelve
+    public static void printPowerTwoNumbers() {
+        int[] arr = {2, 4, 8, 32, 15, 34, 1024};
+        int result = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if ((arr[i] & (arr[i] - 1)) == 0) {
+                result++;
+            }
+        }
+        System.out.println(result);
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
@@ -159,5 +171,6 @@ public class Main {
         sortArrayAscendingAndDescendingOrder();
         printALetters();
         checkingValueYesOrNo();
+        printPowerTwoNumbers();
     }
 }
