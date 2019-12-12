@@ -72,6 +72,18 @@ public class Main {
         System.out.println();
     }
 
+    //Seventh Problem
+    public static void doubleElementsGreaterThan() {
+        double x = 24.56;
+        double[] arr = {16.35, 58.1, 37.6, 24.6, -14.8, 21.1};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > x) {
+                System.out.print(arr[i] + " ");
+            }
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
@@ -80,5 +92,6 @@ public class Main {
         printEvenElements();
         printOddElementsOfArray();
         arrayElementsCanBeDividedByFive();
+        doubleElementsGreaterThan();
     }
 }
