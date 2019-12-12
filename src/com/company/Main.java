@@ -22,9 +22,22 @@ public class Main {
         System.out.println();
     }
 
+    //Third Problem
+    public static void printArrayElementsToThousand() {
+        int[] arr = new int[1001];
+        int value = 1;
+        for (int i = 0; i < arr.length - 1; i++) {
+            arr[i] = value;
+            value++;
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
         printArrayOfZeroValues();
+        printArrayElementsToThousand();
     }
 }
