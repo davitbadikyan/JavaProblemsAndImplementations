@@ -124,6 +124,18 @@ public class Main {
         System.out.println();
     }
 
+    //Tenth Problem
+    public static void printALetters() {
+        String str = "How to make Armenia strong again";
+        int result = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'a') {
+                result++;
+            }
+        }
+        System.out.println(result);
+    }
+
 
     public static void main(String[] args) {
         printArrayElements();
@@ -135,5 +147,6 @@ public class Main {
         doubleElementsGreaterThan();
         printElementsGreaterOrSmallerThan();
         sortArrayAscendingAndDescendingOrder();
+        printALetters();
     }
 }
