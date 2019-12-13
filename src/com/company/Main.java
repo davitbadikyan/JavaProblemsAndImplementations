@@ -22,7 +22,7 @@ public class Main {
         Human human1 = new Human("Levon", "Asatryan", "male", 1998);
         Human human2 = new Human("Gayane", "Muradyan", "female", 1960);
 
-        System.out.println("The name of the biggest human is: " + functionManager.oldestLastName(new Human[]{human, human1, human2}));
+        System.out.println("The surname of the biggest human is: " + functionManager.oldestLastName(new Human[]{human, human1, human2}));
 
         System.out.print("Human's names are: ");
         functionManager.printFullName(human1, human2);
